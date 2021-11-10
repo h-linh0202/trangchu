@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-image: url(https://i.pinimg.com/736x/2c/84/5a/2c845a66b8ad2a8aafd288bdc16cd459.jpg);
+
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.header{
+    height: 80px;
+    width: 100%;
+    /* background:springgreen; */
+    display: flex;
+}
+.header__profile{
+    margin: auto;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+}
+.header__group{
+   display: flex;
+   margin: auto;
+}
+.header__group-item{
+    /* background:tomato; */
+    margin-left: 30px;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+.header__group-item a{
+    color: #fff;
+}
+
+@keyframes hover{
+    from{
+        transform: scale(0);
+    }
+    to{
+       
+        transform: scale(1);
+    }
+}
+.header__group-item-list{
+    height: 200px;
+    width: 150px;
+    background:rgba(14, 181, 247, 0.288);
+    position: absolute;
+    left: 1065px;
+    font-size: 16px;
+    border-radius: 10px;
+    top:70px;
+    display: none;
+    animation: hover ease-in 0.2s;
+    transform-origin: top ;
+    z-index: 2;
+}
+.header__group-item:hover .header__group-item-list{
+    display: block;
+}
+.header__group-item-list::before{
+    height: 20px;
+    width: 150px;
+    /* background:violet; */
+    content: "";
+    position: absolute;
+    top:-20px;
+}
+.header__group-item-list-item{
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    font-weight: 400;
+}
+.header__group-item-list-item:hover{
+   background:rgb(11, 177, 243)
+}
+.container{
+    height: 450px;
+    width: 100%;
+    /* background:springgreen; */
+}
+.container__group h1{
+    font-size: 70px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 0px 5px ;
+}
+.container__group h3{
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+.container__group{
+    position: relative;
+    top:50px
+}
+.container__group button{
+    height: 50px;
+    width: 200px;
+    margin-left: 580px;
+    margin-top: 70px;
+    background:rgba(51, 51, 51, 0.63);
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.container__group button:hover{
+    box-shadow: 0px 0px 30px rgb(11, 177, 243);
+    background:rgb(75, 199, 248)
+}
